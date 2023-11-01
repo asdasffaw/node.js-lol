@@ -7,10 +7,10 @@ const app = express();
 const port = 3000;
 
 
-
-
 app.get("/", async (req, res) => {
-	request.get('http://somesite.com/template1/user3/index.html', function(err, response, body) {
+	const urlParams = new URLSearchParams(req.protocol);
+	const param = urlParams.get('q');
+	request.get(param, function(err, response, body) {
 		res.send(response);
 	});
 });
