@@ -8,10 +8,10 @@ const port = 3000;
 
 
 app.get("/", async (req, res) => {
-	const urlParams = new URLSearchParams(req.protocol);
-	const param = urlParams.get('q');
+	//const urlParams = new URLSearchParams(req.protocol);
+	//const param = urlParams.get('q');
 
-	request.get(param, function(err, response, body) {
+	request.get("https://google.com/", function(err, response, body) {
 		res.writeHead(response.statusCode, response.headers)
 		res.send(response);
 	});
