@@ -1,8 +1,6 @@
 {
   "name": "node-express-app",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:hop-examples/node-express-app.git",
   "author": "Phineas Walton <phin@hop.io>",
   "license": "MIT",
   "type": "module",
@@ -10,6 +8,7 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "request": "^2.88.2"
   }
 }
