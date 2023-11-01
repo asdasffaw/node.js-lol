@@ -11,8 +11,7 @@ app.get("/", async (req, res) => {
 	//const urlParams = new URLSearchParams(req.protocol);
 	//const param = urlParams.get('q');
 
-	request.get("https://google.com/", function(err, response, body) {
-		res.writeHead(response.statusCode, response.headers)
+	request.get('https://google.com', function(err, response, body) {
 		res.send(response);
 	});
 });
