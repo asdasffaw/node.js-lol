@@ -13,7 +13,7 @@ app.get("/", async (req, res) => {
 
 	request.get(param, function(err, response, body) {
 		res.writeHead(response.statusCode, response.headers)
-		response.pipe(res);
+		res.send(response);
 	});
 });
 
