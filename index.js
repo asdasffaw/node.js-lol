@@ -3,7 +3,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 
-request('https://alexandrarawand.000webhostapp.com/index.php', function (error, response, html) {
+request('google.com', function (error, response, html) {
     if (!error && response.statusCode == 200) {
         var $ = cheerio.load(html);
         // Get text 
