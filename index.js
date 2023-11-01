@@ -1,6 +1,6 @@
 import express from "express";
 import os from "node:os";
-import * as request from 'request';
+import request from 'request';
 
 const hostname = os.hostname();
 const app = express();
