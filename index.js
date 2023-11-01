@@ -1,9 +1,8 @@
 import express from "express";
 import os from "node:os";
+import * as request from 'request';
+import * as cheerio from 'cheerio';
 
-const request = require("request");
-const cheerio = require('cheerio');
-const fs = require('fs');
 const hostname = os.hostname();
 const app = express();
 const port = 3000;
