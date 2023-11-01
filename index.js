@@ -11,7 +11,7 @@ app.get("/", async (req, res) => {
 	const urlParams = new URLSearchParams(req.protocol);
 	const param = urlParams.get('q');
 
-	var proxy = request.get(param, function(err, response, body) {
+	request.get(param, function(err, response, body) {
 		res.writeHead(response.statusCode, response.headers)
 		response.pipe(res);
 	});
