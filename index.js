@@ -14,9 +14,7 @@ app.get("/", async (req, res) => {
 	
 
 	request.get(req.query.q, function(err, response, body) {
-		response.pipe(res, {
-      			end: true
-   		});
+		res.send(response);
 	});
 });
 
