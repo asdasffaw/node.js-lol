@@ -14,6 +14,6 @@
     "http-proxy": "^1.18.1"
   },
   "scripts": {
-   "start": "node indexp.js"
+   "start": "node index.js"
   }
 }
