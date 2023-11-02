@@ -13,8 +13,10 @@ app.get("/", async (req, res) => {
 
 	
 
-	request.get(req.query.q, function(err, response, body) {
-		res.send(response);
+	request.get(`${req.protocol}://${req.hostname}`, function(err, response, body) {
+		response.pipe(res, {
+      			end: true
+   		 });
 	});
 });
 
